@@ -6,23 +6,20 @@
 
 		<script>
 
+			var sexo = prompt('Digite seu sexo: ')
 			var nome = prompt('Digite o seu nome: ')
 			var altura = prompt('Digite a sua altura: ')
 			var peso =  prompt('Digite o seu peso: ')
 
-			function calcularImc(peso, altura){
-
+			function calcularImc (peso, altura){
 				var massa = peso / (altura * altura)
-
-				return massa 
+				return massa
 			}
+			var massa = calcularImc(peso, altura)
 
-			
 			altura = parseFloat(altura)
 			peso = parseFloat(peso)
 
-
-			
 			if (massa < 16) {
 				classficacao = 'Baixo peso muito grave'
 			}else if (massa >= 16.1 && massa <= 16.99) {
@@ -40,8 +37,8 @@
 			}else {
 				classficacao = 'Obesidade grau III'
 			}
-
-			document.write(nome + ' possui índice de massa corporal igual a ' + massa + ' sendo classificado como: ' + classficacao)
+			
+			document.write(nome + ' possui índice de massa corporal igual a ' + massa + ' do sexo ' + sexo + ' sendo classificado como: ' + classficacao)
 
 		</script>
 
