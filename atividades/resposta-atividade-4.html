@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+	
+
+	</head>
+	<body>
+		<h3>Digite Alguma Coisa</h3>
+		<input onfocus="modificaFoco()" onblur="modificaFoco2()" id="entrada" type="text" placeholder="Clique aqui" name="">
+
+		 <script> 
+		 	function modificaFoco() {
+		 		document.getElementById('entrada').style.background = "yellow"
+		 	}
+
+		 	function modificaFoco2() {
+		 		var valorCampo = document.getElementById('entrada').value
+
+		 		if (valorCampo.length < 3) {
+		 			document.getElementById('entrada').style.background = "red"
+
+		 		} else {
+		 			document.getElementById('entrada').style.background = "green"
+		 		}
+
+		 	}
+
+		
+		</script>
+
+	</body>
+</html>
