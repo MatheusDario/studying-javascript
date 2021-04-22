@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+		<script>
+
+			var num1 = prompt('Digite um número: ')
+			var operacao = prompt('Digite soma ou subtração: ')
+			var num2 = prompt('Digite um número: ')
+			num1 = parseInt(num1)
+			num2 = parseInt(num2)
+			
+
+			function calculaSomaSubtracao (soma, subtração) {
+				if(operacao == 'soma'){
+					var resultado = num1 + num2
+					soma('O resultado da soma é: ' + resultado)
+				} else if (operacao == 'subtração') {
+					var resultado2 = num1 - num2
+					subtração('O resultado da subtração é: ' + resultado2)
+				}else {
+					document.write('<h1>' + 'DADO INSERIDO INVALIDO' + '</h1>')
+				}
+			}
+
+			var soma = function(resultado) {
+
+				document.write('<h2>' + resultado + '</h2>')
+			}
+
+			var subtração = function(resultado2) {
+				document.write('<h1>' + resultado2 + '</h1>')
+			}
+
+			calculaSomaSubtracao(soma, subtração)
+			
+			
+
+			console.log(soma)
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>
