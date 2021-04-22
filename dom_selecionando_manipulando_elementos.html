@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+	</head>
+	<body>
+		<h2>Digite um Caracter</h2>	
+		<input onkeyup="distribuiCaracter()" type="text"placeholder="Digite um caractere aqui" id="entrada" class="campo_nome" name="nome">
+		<hr>
+		<span>Letras:</span>
+		<input type="text" id="apenas_letras" disabled="disabled" >
+		<hr>
+		<span>Números:</span>
+		<input type="text" id="apenas_numeros" disabled="disabled" >
+
+		 <script> 
+		 	//getElementById() << Recupera o id selecionado
+		 	//getElmentByTagName << Recupera atráves da tag selecionada
+		 	//getElmentByClassName << Recupera atráves da classe selecionada
+		 	//getElmentByName << Recupera atráves do nome selecionado
+
+			//console.log(document.getElementById('nome_usuario'))
+			//console.log(document.getElementsByTagName('input'))
+			//console.log(document.getElementsByClassName('campo_nome'))
+			//console.log(document.getElementsByName('nome'))
+
+			function distribuiCaracter() {
+				//selecionar o valor digitado
+				var caracter = document.getElementById('entrada').value
+				//limpar o campo de digitação
+				document.getElementById('entrada').value = ''
+
+				//limpar espaços em brancos na extremidades da string
+				caracter.trim()
+
+				switch(caracter) {
+					case '0':
+					case '1':
+					case '2':
+					case '3':
+					case '4':
+					case '5':
+					case '6':
+					case '7':
+					case '8':
+					case '9':
+						//adicionar o caracter no campo referente a número
+						document.getElementById('apenas_numeros').value += caracter
+						break;
+					default:
+					//adicionar o caracter no campo referente a letras
+						document.getElementById('apenas_letras').value += caracter
+				}		
+			}
+		</script>
+
+	</body>
+</html>
