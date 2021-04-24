@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Java Script</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="entrada">
+			<input type="text" name="">
+			<button id="adicionar_btn" onclick="verificar('acao', 'adicionar')">Adicionar</button>
+			<button onclick="verificar('acao', 'ordenar')">Ordenar</button>
+		</div>
+
+		<script>
+			
+			var objetos = ['Cadeira', 'Impressora', 'Garfo']
+			var auxiliar = objetos.indexOf(prompt('Digite: '))
+
+			console.log(auxiliar)
+			
+			function verificar(tipo, valor) {
+				if(tipo === 'acao') {
+					document.getElementById('entrada').value = ''
+					alert('Informe um valor válido')
+					
+				}else if (tipo === 'acao' & valor === 'adicionar') {
+					document.getElementById('adicionar_btn').value = adicionar
+					if (auxiliar === -1) {
+						alert('Elemento não existe')
+					}
+				}
+			}
+
+			
+
+		</script>
+	</body>
+</html>

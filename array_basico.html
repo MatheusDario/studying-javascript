@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript</title>
+
+	</head>
+	<body>
+		
+
+		 <script> 
+		 //array simples
+		 /*
+		 var lista_frutas = []
+
+		 lista_frutas[1] = 'Banana'
+		 lista_frutas[3] = 'Maça'
+		 lista_frutas['x'] = 'Morango'
+		 lista_frutas[100] = 50
+		 console.log(lista_frutas) 
+		 var lista_frutas = Array('Banana', 'Pera', 'Laranja')
+		 console.log(lista_frutas)
+
+		 //array multidimensional
+		 var lista_coisas = Array()
+		 lista_coisas['frutas'] = Array('Banana', 'Maça','Morango', 'Laranja' )
+		 lista_coisas['pessoas'] = ['João', 'José', 'Maria']
+		 document.write(lista_coisas['pessoas'][2])*/
+
+		 //Array - Métodos de inclusão e exclusão
+		 /*var lista_coisas = []
+
+		 lista_coisas['frutas'] = Array()
+		 lista_coisas['pessoas'] = Array()
+		 lista_coisas['frutas'].push('Pera')
+		 lista_coisas['frutas'].push('Tomate')
+		 lista_coisas['pessoas'].push('Pedro')
+
+		 console.log(lista_coisas)*/
+
+		 //incluir elemento no final array
+		 //lista_frutas.push('Uva')
+		 //incluir elemento no início array
+		 //lista_frutas.unshift('Laranja')
+		 //excluir elemento no final array
+		 //lista_frutas.pop()
+		 //excluir elemento no início array
+		 //lista_frutas.shift()
+
+		 //Array - Método de pesquisa
+		/* var lista_frutas = ['Banana', 'Morango', 'Maça', 'Uva']
+
+		 auxiliar = lista_frutas.indexOf(prompt('Digite a fruta: '))
+
+		 if(auxiliar === -1) {
+		 	console.log('Elemento não existe')
+		 } else {
+		 	console.log('Elemento existe e está na posição ' + auxiliar)
+		 }*/
+
+		 //Array - Ordenação
+		 /*var lista_frutas = []
+		 lista_frutas[0] ='Maça'
+		 lista_frutas[1] ='Uva'
+		 lista_frutas[2] ='Banana'
+		 lista_frutas[3] ='Morango'
+		 console.log(lista_frutas.sort())*/
+
+		 var lista_numeros = []
+		 lista_numeros[0] = 12
+		 lista_numeros[1] = 40
+		 lista_numeros[2] = 7
+		 lista_numeros[3] = 1
+
+		 console.log(lista_numeros.sort(ordenaNumeros))
+
+		 function ordenaNumeros(a, b) {
+		 	return a - b
+		 }
+		 
+
+
+		</script>
+
+	</body>
+</html>
