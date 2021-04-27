@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Java Script</title>
+		<meta charset="utf-8">
+
+	</head>
+	<body>
+		
+		<h2>For in</h2>
+			<script>
+				var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+				//console.log(listaConvidados)
+
+				for(var x in listaConvidados) {
+					//console.log('Índice ' + x + ' valor ' + listaConvidados[x])
+				}		
+			</script>
+
+		<h2>Foreach</h2>
+			<script>
+				var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+				console.log(listaFuncionarios)
+				document.write(listaFuncionarios[3])
+
+				listaFuncionarios.forEach(function(valor, indice, array) {
+					//lógica
+					console.log('indice ' + indice + ' | valor: ' + valor)
+
+					if(valor === 'Lucas') {
+						array[indice] = 'Carlos'
+					}
+					
+				})
+
+				console.log(listaFuncionarios)
+				document.write('<br/>' + listaFuncionarios[3])
+
+			</script>
+
+	</body>
+</html>

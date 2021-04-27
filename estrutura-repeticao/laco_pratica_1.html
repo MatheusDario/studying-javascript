@@ -7,27 +7,56 @@
 	</head>
 	<body>
 		
+		<h2>Laços de Repetição 1</h2>
+			<script>
+				var lista_frutas = ['Banana', 'Maça', 'Morango', 'Uva']
+				/*
+				lista_frutas[0] = 'Banana'
+				lista_frutas[1] = 'Maça'
+				lista_frutas[2] = 'Morango'
+				lista_frutas[3] = 'Uva'
+				
+				var y = 0
+				while(y < lista_frutas.length) {
+					document.write(lista_frutas[y] + '<br/>')
+					y++
+				}
+				*/
+				for(var z = 0; z < lista_frutas.length; z++){
+					document.write(lista_frutas[z] + '<br/>')
+				}
+
+			</script>
+
+		<h2>Laços de Repetição 2</h2>
+		<div>
+			<h3>Tabuada</h3>
+			<script>
+				/*
+				for(var y = 1; y <= 10; y++) {
+
+					for(var x = 1; x <= 10; x++) {
+						document.write(y + ' x ' + x + '= ' + (y * x) + '<br/>')
+					}
+
+					document.write('<hr/>')
+				}
+				*/
+				var x = 0
+				while(x <= 9) {
+					x++
+					var a = 1
+					while(a <= 10) {
+						document.write(x + ' x ' + a + ' = ' + (x * a) + '<br/>')
+						a++
+					}
+					document.write('<hr/>')
+				}
+
+				
+			</script>
+		</div>
 		
-
-		<script>
-
-			var lista_frutas = Array()
-			lista_frutas[0] = 'Banana'
-			lista_frutas[1] = 'Maça'
-			lista_frutas[2] = 'Morango'
-			lista_frutas[3] = 'Uva'
-			
-			var y = 0
-
-			while(y < lista_frutas.length) {
-				document.write(lista_frutas[y] + '<br/>')
-				y++
-
-			}
-			
-			
-
-		</script>
 
 	</body>
 </html>
